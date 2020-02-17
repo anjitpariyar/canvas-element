@@ -46,11 +46,15 @@ function setup(){
 }
 
 function animationLoop(cHeight, cWidth){
+	requestAnimationFrame(animationLoop);
 		if(parasite.rotation<=1){
-			requestAnimationFrame(animationLoop);
 			parasite.rotation  += 0.001;
-			
 		}
+	else{
+		while(parasite.rotation>1){
+			parasite.rotation  -= 0.001;
+		}
+	}
 		
 	
 	// parasite.x= cWidth/2;
