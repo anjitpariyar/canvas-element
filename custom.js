@@ -28,6 +28,7 @@ function setup(){
 
 	parasite.click = function(){
 		this.pivot.set(200, 200);
+		this.anchor.set(0.5);
 		if( this.scale.x < 3 ){
 			this.scale.x += 0.06;
 			this.scale.y += 0.06;
