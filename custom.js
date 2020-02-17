@@ -28,14 +28,14 @@ function setup(){
 
 	parasite.click = function(){
 		this.pivot.set(200, 200);
-		if( this.scale.x < 4 ){
+		if( this.scale.x < 3 ){
 			this.scale.x += 0.06;
 			this.scale.y += 0.06;
 			
 		}
 		else{
-			this.scale.x -= 4;
-			this.scale.y -= 4;
+			this.scale.x -= 2;
+			this.scale.y -= 2;
 		}
 		
 	}
