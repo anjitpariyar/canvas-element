@@ -11,7 +11,7 @@ var stage = new PIXI.Container();
 PIXI.loader
 .add("parasite", './parasite.jpeg')
 .load(setup)
-
+var i =0;
 var parasite;
 function setup(){
 	stage.interactive = true;
@@ -38,8 +38,17 @@ function setup(){
 }
 
 function animationLoop(cHeight, cWidth){
-	requestAnimationFrame(animationLoop);
-	parasite.rotation  += 0.001;
+	while(i<= 100){ 
+		requestAnimationFrame(animationLoop);
+		parasite.rotation  += 0.001;
+		i++;
+	}
+	while(i!<0){
+		requestAnimationFrame(animationLoop);
+		parasite.rotation  -= 0.001;
+		i--;
+	}
+	
 	// parasite.x= cWidth/2;
 	// parasite.y= cHeight/2;
 
