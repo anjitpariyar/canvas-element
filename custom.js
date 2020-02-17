@@ -42,11 +42,13 @@ function animationLoop(cHeight, cWidth){
 		requestAnimationFrame(animationLoop);
 		parasite.rotation  += 0.001;
 		i++;
+		console.log(i);
 	}
 	while(i!<0){
 		requestAnimationFrame(animationLoop);
 		parasite.rotation  -= 0.001;
 		i--;
+		console.log(i);
 	}
 	
 	// parasite.x= cWidth/2;
