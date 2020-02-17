@@ -44,7 +44,7 @@ function animationLoop(cHeight, cWidth){
 		i++;
 		console.log(i);
 	}
-	while(i!<0){
+	while(i>0){
 		requestAnimationFrame(animationLoop);
 		parasite.rotation  -= 0.001;
 		i--;
