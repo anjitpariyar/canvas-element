@@ -1,0 +1,15 @@
+body{
+	margin: 0;
+	font-size: 16px;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: #fff;
+	color: #313131;
+}
+canvas{
+	height: 600px;
+	width: 67%;
+	border: 10px solid #313131;
+	margin: 2rem 15%;
+	object-fit: cover;
+}
